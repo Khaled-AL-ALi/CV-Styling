@@ -1,0 +1,216 @@
+* {
+    font-size: 20px;
+}
+
+@media screen and (max-width:1000px) {
+    * {
+        font-size: 12px;
+    }
+    figure {
+        display: none;
+    }
+}
+
+h2,
+.experience-institution {
+    display: none;
+}
+
+header {
+    margin-top: 100px;
+}
+
+body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about>h3 {
+    display: none;
+}
+
+figure {
+    position: absolute;
+    top: 50px;
+    right: 10%;
+    transform: rotate(-24deg);
+}
+
+figure>img {
+    width: 170px;
+}
+
+h1 {
+    font-size: 36px;
+    border-bottom: 2px solid gray;
+}
+
+[data-skill="5"] span::after {
+    content: "★★★";
+}
+
+[data-skill="3"] span::after {
+    content: "★★";
+}
+
+[data-skill="1"] span::after {
+    content: "★";
+}
+
+[data-skill="9"] span::after {
+    content: "★★★★★";
+}
+
+[data-skill="7"] span::after {
+    content: "★★★★";
+}
+
+.skill {
+    background-color: rgb(42, 141, 141);
+    padding: 10px 0;
+    color: white;
+    width: 30%;
+    max-width: 150px;
+    margin: 1% 1%;
+    padding-left: 1%;
+}
+
+.experience,
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.experience h4,
+.experience .experience-details {
+    min-width: 50%;
+    width: 50%;
+}
+.skills-secondary{font-size: 24px;}
+.experience-details {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+section {
+    margin-top: 20px;
+}
+
+h4,
+.experience-date-separator {
+    color: rgb(42, 141, 141);
+}
+
+.experience-details {
+    color: grey;
+}
+
+#contact>h3,
+dt {
+    display: none;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+@media screen and (min-width:840px) {
+    section h3 {
+        position: absolute;
+    }
+    .experience,
+    .skills,
+    section ul {
+        width: 80%;
+        margin-left: 15%;
+        border-left: 2px solid gray;
+        padding: 2%;
+    }
+    .skills {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    #about>p {
+        width: 70%;
+        font-family: sans-serif;
+        color: gray;
+        margin-bottom: 100px;
+    }
+    h3 {
+        margin-top: 2.5%;
+    }
+}
+
+@media screen and (max-width:841px) {
+    #about>p {
+        width: 100%;
+        font-family: sans-serif;
+        color: gray;
+        margin-bottom: 10px;
+    }
+    h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+
+#contact h3 {
+    display: none;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-type,
+.contact-skype {
+    display: none;
+}
+
+.contact-email .contact-value,
+.contact-phone .contact-value,
+.contact-github .contact-value,
+.contact-facebook .contact-value {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.contact-phone a::before,
+.contact-email a::before,
+.contact-facebook a::before,
+.contact-github a::before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.contact-phone a::before {
+    background: url('../images/phone.png');
+    background-size: cover;
+}
+
+.contact-email a::before {
+    background: url('../images/email.png');
+    background-size: cover;
+}
+
+.contact-facebook a::before {
+    background: url('../images/facebook.png');
+    background-size: cover;
+}
+
+.contact-github a::before {
+    background: url('../images/github.png');
+    background-size: cover;
+}
+.skills-secondary > .skill > span{font-size: 12px;}
